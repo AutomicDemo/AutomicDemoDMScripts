@@ -92,6 +92,18 @@ Starting the demo:
 - In Jenkins build the DigitalBankingAppPayment app. This will start the Release in CDD when it is finished.
 - You can set up your own Github user and repoint the DigitalBankingAppPayment to that. You can then trigger the build with a code change.
 
+##### Deleting your deployment
+
+**WARNING: All objects created by your deployment will be permanently deleted with this process. Any changes will be lost"**
+
+If you want to delete all the resources for a deployment:  
+1. Click the Activate Cloud Shell button (looks like '**>\_**') in the upper right of the console window.
+2. `cd` to the **AutomicDemoDMScripts/aemain-v1/templates** directory and execute:
+    `bash .\delete_deployment.sh`
+3. Select the deployment you with to delete.
+
+Note: If you try to delete an Automic Demo deployment from the Deployment Manger GUI not all the objects will be removed. Currently Deployment Manager is unable to remove DNS Record sets.
+
 ###Appendix
 ####Appendix I: VARA.GCP.INFO Variable
 | Variable | Desc | Value |
