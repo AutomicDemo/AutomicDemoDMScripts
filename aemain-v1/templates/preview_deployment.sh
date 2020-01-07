@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ $? -eq 0 ]
+if [ $# -eq 0 ]
 then
     echo "This script creates an Automic Demo deployment in preview mode."
     echo "Usage: $0 deployment_name"
