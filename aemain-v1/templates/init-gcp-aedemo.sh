@@ -12,12 +12,12 @@ gcloud services enable dns.googleapis.com
 gcloud services enable compute.googleapis.com
 gcloud services enable deploymentmanager.googleapis.com
 
-gcloud compute images list --project demos-esd-automation --filter="name='aemain-cdrive-img-'"
-image_access=$?
+#gcloud compute images list --project demos-esd-automation --filter="name='aemain-cdrive-img-'"
+#image_access=$?
 
-if [ $? -ne 0 ]
-then
-  echo "You do not have permissions to the demo-esd-automation image repository."
-  echo "Send the output of the command 'gcloud projects list' to Marc Carkeek from your Broadcom e-mail address."
-else
-  echo "Access to demo-esd-automation images confirmed."
+#if [ $? -ne 0 ]
+#then
+#  echo "You do not have permissions to the demo-esd-automation image repository."
+#  echo "Send the output of the command 'gcloud projects list' to Marc Carkeek from your Broadcom e-mail address."
+#else
+#  echo "Access to demo-esd-automation images confirmed."
