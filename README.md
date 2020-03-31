@@ -32,11 +32,16 @@ To execute the template you will need-
 
 2. Click the Activate Cloud Shell button (looks like '**>\_**') in the upper right of the console window.
 
+2. Set the active project for you session:
+   `gcloud config set project <<Project ID>>`
+   Eample:
+   `gcloud config set project `
+
 3. From the command line copy this repository to a location where you can run the gcloud command:  
    `git clone https://github.com/AutomicDemo/AutomicDemoDMScripts`
 
 4. `cd` to the **AutomicDemoDMScripts/aemain-v1/templates** directory of the copied repository and execute:  
-   `bash .\init-gcp-aedemo.sh`
+   `bash ./init-gcp-aedemo.sh`
 
 5. Edit the **properties:** section in aemain-v1-config.yaml to deploy in your preferred region and zone. The **'stamp'** value allows you to personalize all the base-names of the objects created. You can also specify an single IP, **'myip'**, that will have RDP and SSH permissions to the boxes. See the **Set Firewall Rules** section below for more info.  
 

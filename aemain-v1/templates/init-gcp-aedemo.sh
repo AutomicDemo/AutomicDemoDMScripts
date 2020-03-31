@@ -12,9 +12,6 @@ gcloud services enable dns.googleapis.com
 gcloud services enable compute.googleapis.com
 gcloud services enable deploymentmanager.googleapis.com
 
-gcloud compute images list --project demos-esd-automation --filter="name='aemain-cdrive-img-'"
-image_access=$?
-
 if [ $? -ne 0 ]
 then
   echo "You do not have permissions to the demo-esd-automation image repository."
