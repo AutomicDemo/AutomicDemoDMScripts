@@ -4,8 +4,8 @@ The templates deploy the following machines.:
 
 | Machine Name | Type | Purpose |
 | ---- | ---- | ---- |
-| AEMAIN-V# | Windows | Primary Jump Server into environment. AE 12.3.1, CDA 12.3.1, AE Analytics, Infrastructure Manager, AWI, Terraform |
-| AEJENKINS-V# | Windows | Jenkins, Helm Charts (Work In Progress) |
+| AEMAIN-V# | Windows | Primary Jump Server into environment. AE 12.3.1, CDA 12.3.1, AE Analytics, Automic Infrastructure Manager, AWI(Automic Web Interface), CA Test Data Manager, CA Service Virtualization, CA Agile Requirements Designer, Putty, Python 3.8 with GCP SDK, Terraform |
+| AEJENKINS-V# | Windows | Jenkins, Helm Charts, Eclipse|
 | AECDD2-V# | Linux | CDD, CDI, Docker, Tomcat |
 | AECDD1-V# | Linux | CDD and CDI Repository (Postgres and MongoDB) |
 
